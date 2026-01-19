@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    Enter your name: <input type="text" id="fname">
-	
-	<script type="text/javascript" src="./script.js">
-	</script>
-  </body>
+<head>
+    <title>Uppercase Input</title>
+    <script>
+        function convertToUppercase() {
+            const input = document.getElementById("fname");
+            input.value = input.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+
+    <label for="fname">Name:</label>
+    <input 
+        type="text" 
+        id="fname" 
+        onblur="convertToUppercase()"
+    >
+
+</body>
 </html>
